@@ -15,6 +15,7 @@
       <nav>
         <a href="#overview"><span class="num">00</span>总览地图</a>
         <a href="#keywords"><span class="num">字</span>关键字字典</a>
+        <a href="#tpl-gallery"><span class="num">模</span>提示词模板库</a>
         <a href="#camera"><span class="num">01</span>运镜</a>
         <a href="#shot"><span class="num">02</span>景别</a>
         <a href="#angle"><span class="num">03</span>视角</a>
@@ -472,6 +473,767 @@
           <strong>填值口诀：</strong>
           <span class="mono">style + subject + action + environment/time/weather + camera movement + shot size/angle + lens + lighting + color + mood + aspect ratio/duration</span>
           。同一成片里，style / character / scene 三段锁定词保持逐字一致；其余按镜头单独替换。
+        </div>
+      </section>
+
+      <!-- Template gallery -->
+      <section class="section" id="tpl-gallery">
+        <div class="section-head">
+          <div class="section-num">模</div>
+          <div>
+            <h2>提示词模板库</h2>
+            <span class="en">Style Templates · Scene Packs · Skills</span>
+          </div>
+        </div>
+        <p class="intro">
+          不同风格 × 不同画面的可复制提示词模板，每条都配有演示图。每个风格已落地为项目内一套 skill：
+          可读包在 <span class="mono">ai-video-skills/&lt;风格ID&gt;/</span>，可加载技能在
+          <span class="mono">.claude/skills/&lt;风格ID&gt;/</span>（含 SKILL.md 与 locales）。新开对话后技能列表可发现。
+        </p>
+        <div class="note">
+          用法：复制风格锁定词 + 某一条画面模板 → 只改本镜头的动作/运镜/景别 → 人物与场景锁定词保持逐字一致。
+          更多取值见 <a href="#keywords">关键字字典</a>；运镜动画见 <a href="#camera">01 运镜</a>。
+        </div>
+
+        <article class="tpl-block" id="tpl-cinematic-realism">
+          <div class="tpl-media">
+            <img src="assets/style-photoreal.png" alt="电影写实模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>电影写实</h3>
+              <span class="kw-key mono">cinematic-realism</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Cinematic photorealistic, 35mm film look, shallow DOF, subtle grain.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/cinematic-realism/</span> · 演示图：<span class="mono">assets/style-photoreal.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>雨夜人物推进</h4>
+                <span class="scene">人物 · 中近景 · 推进</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Cinematic photorealistic, 35mm film look. A 25-year-old woman in a red wool coat walks slowly through a rainy neon alley in Tokyo at night. Slow dolly in, medium close-up, eye level. Wet asphalt reflects cyan and orange neon. Rim light from behind, soft fill on face. Teal and orange grade, shallow DOF. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>城市建立镜头</h4>
+                <span class="scene">空镜 · 大远景 · 航拍缓推</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Cinematic photorealistic establishing shot of a rainy neon city at night, extreme wide aerial view, slow push in toward a glowing alley, volumetric haze, teal and orange grade, 35mm film grain. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>对话过肩</h4>
+                <span class="scene">双人 · 过肩 · 固定</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Cinematic photorealistic film still, over-the-shoulder shot in a dim cafe at night, rain on windows, woman in red coat listening, warm practical lamps, shallow DOF, natural skin tones. Locked-off camera, medium close-up. 16:9, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-anime-cel">
+          <div class="tpl-media">
+            <img src="assets/tpl-anime-school.png" alt="日式动画模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>日式动画</h3>
+              <span class="kw-key mono">anime-cel</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Japanese anime cel animation, clean line art, painted background.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/anime-cel/</span> · 演示图：<span class="mono">assets/tpl-anime-school.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>天台少女 · 夕阳</h4>
+                <span class="scene">人物 · 中景 · 环绕</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Japanese anime cel style. A high school girl in uniform stands on the rooftop at sunset, cherry blossoms drifting, wind in her hair. Slow orbit shot, medium shot, warm golden sky, clean line art, painterly background. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>雨夜动画街</h4>
+                <span class="scene">场景 · 中景 · 跟随</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Anime cel style city street at night in rain, neon signs reflecting on wet ground, a girl with umbrella walking away. Camera follows from behind, medium shot, soft light blooms. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>大特写眼神</h4>
+                <span class="scene">特写 · 固定</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Anime cel style extreme close-up of a girl's eyes reflecting city lights, subtle emotional blink, clean lines, soft shading. Static shot. 16:9, 3 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-ghibli-painterly">
+          <div class="tpl-media">
+            <img src="assets/tpl-ghibli-hill.png" alt="吉卜力手绘模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>吉卜力手绘</h3>
+              <span class="kw-key mono">ghibli-painterly</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Ghibli inspired painterly anime, lush nature, soft magical light.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/ghibli-painterly/</span> · 演示图：<span class="mono">assets/tpl-ghibli-hill.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>风吹山丘</h4>
+                <span class="scene">空镜 · 远景 · 横摇</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Ghibli inspired painterly anime. Vast green rolling hills under towering clouds, wind through grass. Slow pan right, wide shot, soft volumetric light. 16:9, 6 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>山丘上的红衣</h4>
+                <span class="scene">人物 · 全景 · 拉远</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Ghibli inspired painterly anime, a small girl in a red dress on a green hill, camera slowly pulls back to reveal endless sky, soft golden light. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>林间光束</h4>
+                <span class="scene">场景 · 中景 · 缓推</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Ghibli inspired forest with god rays through leaves, fireflies drifting, slow push in through ferns. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-cgi-pixar">
+          <div class="tpl-media">
+            <img src="assets/style-3d.png" alt="3D 卡通模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>3D 卡通</h3>
+              <span class="kw-key mono">cgi-pixar</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Stylized 3D CGI, Pixar-like design, soft cinematic lighting.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/cgi-pixar/</span> · 演示图：<span class="mono">assets/style-3d.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>3D 角色出场</h4>
+                <span class="scene">角色 · 中景 · 弧线推进</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Stylized 3D CGI Pixar-like animation. A cute round character in a red coat steps into a rain-wet neon street at night. Camera arcs in, medium shot, glossy reflections. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>产品 3D 演示</h4>
+                <span class="scene">产品 · 特写 · 环绕</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">High-quality 3D CGI product animation, matte black headphones on dark reflective floor, camera orbits slowly, studio softboxes. 1:1, 4 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>欢乐群像</h4>
+                <span class="scene">群体 · 全景 · 摇镜</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Pixar-like 3D ensemble of colorful characters waving in a bright town square, pan left to right, sunny cheerful lighting. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-cyberpunk-neon">
+          <div class="tpl-media">
+            <img src="assets/style-cyberpunk.png" alt="赛博朋克模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>赛博朋克</h3>
+              <span class="kw-key mono">cyberpunk-neon</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Cyberpunk neon night, wet streets, cyan magenta palette.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/cyberpunk-neon/</span> · 演示图：<span class="mono">assets/style-cyberpunk.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>霓虹巷推进</h4>
+                <span class="scene">人物 · 中近景 · 推进</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Cyberpunk photorealistic night, young woman in a red coat walking through a dense neon alley in the rain. Slow dolly in, medium close-up. Magenta and cyan neon, wet asphalt, steam vents, holographic ads without readable text. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>未来天际线</h4>
+                <span class="scene">空镜 · 大远景 · 航拍</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Cyberpunk city skyline at night in rain, flying vehicles leaving light trails, extreme wide aerial establishing shot. 21:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>FPV 穿街</h4>
+                <span class="scene">动作 · FPV · 高速</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">FPV drone flying at high speed through a cyberpunk neon alley at night, tilted horizon, light streaks, rain. 16:9, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-film-noir">
+          <div class="tpl-media">
+            <img src="assets/tpl-noir-detective.png" alt="黑色电影模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>黑色电影</h3>
+              <span class="kw-key mono">film-noir</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Film noir B&amp;W, hard chiaroscuro, venetian shadows, grain.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/film-noir/</span> · 演示图：<span class="mono">assets/tpl-noir-detective.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>雨夜侦探</h4>
+                <span class="scene">人物 · 中景 · 缓推</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Film noir black and white. A detective in a trench coat and hat stands under a streetlamp in a rainy alley at night. Slow push in, medium shot, hard chiaroscuro shadows, 35mm grain. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>百叶窗室内</h4>
+                <span class="scene">室内 · 中近景 · 固定</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Film noir interior, hard light through venetian blinds on a tense face, cigarette smoke, low-key B&amp;W, locked-off MCU. 16:9, 4 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>空巷拉远</h4>
+                <span class="scene">空镜 · 全景 · 拉远</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Film noir empty wet alley at night, single streetlamp, slow pull back revealing long shadows, B&amp;W grain. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-chinese-ink">
+          <div class="tpl-media">
+            <img src="assets/tpl-ink-mountain.png" alt="中国水墨模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>中国水墨</h3>
+              <span class="kw-key mono">chinese-ink</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Chinese ink wash, sumi-e strokes, misty mountains, negative space.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/chinese-ink/</span> · 演示图：<span class="mono">assets/tpl-ink-mountain.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>水墨行旅</h4>
+                <span class="scene">人物 · 远景 · 横移</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Traditional Chinese ink wash animation. A lone traveler on a mountain path in mist. Slow lateral tracking, wide shot, sumi-e brushwork, vast negative space, vermilion accent. 16:9, 6 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>山水显形</h4>
+                <span class="scene">空镜 · 缓显 · 雾动</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Chinese ink wash painting comes alive, mist drifting across layered mountain silhouettes, ink blooming on paper texture, static camera. 16:9, 6 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>水墨飞鸟</h4>
+                <span class="scene">元素 · 固定</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Sumi-e style, a single ink-brush bird flies across white space, wet ink trails, minimal composition. 1:1, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-oil-painting">
+          <div class="tpl-media">
+            <img src="assets/style-oil.png" alt="油画艺术模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>油画艺术</h3>
+              <span class="kw-key mono">oil-painting</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Oil painting, impasto brushwork, impressionist light.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/oil-painting/</span> · 演示图：<span class="mono">assets/style-oil.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>油画人物夜巷</h4>
+                <span class="scene">人物 · 中景 · 缓推</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Oil painting style, thick impasto brushwork. A woman in a red coat in a rain-lit alley at night, neon colors melted into painterly strokes. Slow push in, medium shot. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>印象派风景</h4>
+                <span class="scene">空镜 · 远景 · 摇镜</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Impressionist oil painting landscape at dusk, loose brush strokes, slow pan left, canvas texture. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>静物油画</h4>
+                <span class="scene">产品 · 特写 · 固定</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Oil painting still life, fruit and ceramic on a table, dramatic side light, impasto highlights. 4:3, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-product-commercial">
+          <div class="tpl-media">
+            <img src="assets/tpl-product-watch.png" alt="产品广告模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>产品广告</h3>
+              <span class="kw-key mono">product-commercial</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Premium product commercial, studio light, luxury grade.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/product-commercial/</span> · 演示图：<span class="mono">assets/tpl-product-watch.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>腕表环绕</h4>
+                <span class="scene">产品 · 特写 · 环绕</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Premium product commercial, photorealistic. Elegant wristwatch on dark reflective stone. Slow orbit, close-up, low angle. Soft key + cool rim, black and gold grade. No text on dial. 1:1, 4 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>耳机开箱氛围</h4>
+                <span class="scene">产品 · 中近景 · 推进</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Luxury headphone product film, matte black headphones on wet black surface, subtle neon reflections, slow dolly in, shallow DOF. 16:9, 4 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>悬浮产品</h4>
+                <span class="scene">产品 · 固定 · 微动</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Product floating in dark studio, soft gradient background, gentle object rotation, specular highlights, premium CGI packshot. 9:16, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-food-macro">
+          <div class="tpl-media">
+            <img src="assets/tpl-food-macro.png" alt="美食微距模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>美食微距</h3>
+              <span class="kw-key mono">food-macro</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Food commercial macro, warm appetizing light, steam, gloss.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/food-macro/</span> · 演示图：<span class="mono">assets/tpl-food-macro.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>汤面拉丝</h4>
+                <span class="scene">美食 · 大特写 · 上移</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Cinematic food commercial macro, steaming noodle bowl, chopsticks lifting glossy noodles, steam rising, warm light, slow tilt up. 9:16, 4 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>煎锅火焰</h4>
+                <span class="scene">美食 · 特写 · 微晃</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Photorealistic food shot, chef searing steak, flame burst, sizzling juices, warm kitchen light, handheld slight shake. 16:9, 4 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>甜品剖面</h4>
+                <span class="scene">美食 · 特写 · 刀切</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Macro dessert commercial, knife slicing layered chocolate cake, glossy ganache, soft studio light, slow precise motion. 1:1, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-aerial-travel">
+          <div class="tpl-media">
+            <img src="assets/tpl-aerial-coast.png" alt="航拍风光模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>航拍风光</h3>
+              <span class="kw-key mono">aerial-travel</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Cinematic aerial travel, epic landscape, drone footage.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/aerial-travel/</span> · 演示图：<span class="mono">assets/tpl-aerial-coast.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>海岸线航拍</h4>
+                <span class="scene">风光 · 大远景 · 前推</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Cinematic aerial drone shot of turquoise coastline, waves meeting golden cliffs, golden hour, slow forward flight. 16:9, 6 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>城市鸟瞰夜</h4>
+                <span class="scene">城市 · 鸟瞰 · 缓降</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Aerial night drone footage over a dense city, glowing street grid, slow descent, light haze. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>山脊掠过</h4>
+                <span class="scene">风光 · 高速掠过</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Drone flying fast along a mountain ridge at sunrise, light breaking over peaks, dynamic speed. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-horror-atmosphere">
+          <div class="tpl-media">
+            <img src="assets/tpl-horror.png" alt="恐怖氛围模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>恐怖氛围</h3>
+              <span class="kw-key mono">horror-atmosphere</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Horror atmosphere, flickering light, fog, desaturated dread.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/horror-atmosphere/</span> · 演示图：<span class="mono">assets/tpl-horror.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>废弃医院走廊</h4>
+                <span class="scene">场景 · 中景 · 前移</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Cinematic horror atmosphere, abandoned hospital corridor at night, flickering fluorescent lights, fog, slow steadicam push forward, desaturated grade. 16:9, 6 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>门缝底光</h4>
+                <span class="scene">特写 · 固定微推</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Light leaking under a closed door in darkness, dust in beam, subtle camera creep in, tense silence. 21:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>回头惊悚</h4>
+                <span class="scene">人物 · 中近景 · 手持</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Handheld horror shot, person in dark hallway slowly looking over shoulder, underlight flicker, grain. 16:9, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-sports-fpv">
+          <div class="tpl-media">
+            <img src="assets/tpl-sports-fpv.png" alt="运动 FPV模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>运动 FPV</h3>
+              <span class="kw-key mono">sports-fpv</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Action sports energy, FPV speed, motion streaks.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/sports-fpv/</span> · 演示图：<span class="mono">assets/tpl-sports-fpv.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>城市峡谷俯冲</h4>
+                <span class="scene">FPV · 高速 · 俯冲</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">FPV drone diving through a neon city canyon at night at high speed, tilted horizon, light streaks, rain mist. 16:9, 4 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>滑板跟拍</h4>
+                <span class="scene">运动 · 侧跟 · 低角度</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Low-angle tracking shot following a skateboarder in a sunlit skatepark, smooth gimbal, dust particles. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>跑酷飞跃</h4>
+                <span class="scene">动作 · 升格 · 弧线</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Slow-motion parkour leap between rooftops, camera arcs around mid-air pose, golden hour rim light. 16:9, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-sci-fi-space">
+          <div class="tpl-media">
+            <img src="assets/tpl-sci-fi.png" alt="科幻太空模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>科幻太空</h3>
+              <span class="kw-key mono">sci-fi-space</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Photorealistic sci-fi, spaceship interiors, teal light, vistas.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/sci-fi-space/</span> · 演示图：<span class="mono">assets/tpl-sci-fi.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>舷窗星球</h4>
+                <span class="scene">场景 · 中景 · 缓推</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Photorealistic sci-fi spaceship interior looking out a large viewport at a glowing planet, cool teal lighting, holographic panels abstract UI no readable text, slow push toward the glass. 21:9, 6 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>走廊警报</h4>
+                <span class="scene">场景 · 前移 · 红光</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Sci-fi corridor with red alert lighting, steam vents, slow forward move, photorealistic hard-surface design. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>太空建立</h4>
+                <span class="scene">空镜 · 大远景 · 漂移</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Epic space establishing shot, starship drifting above a ringed planet, slow lateral drift, volumetric sun flare. 21:9, 6 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-flat-motion-graphics">
+          <div class="tpl-media">
+            <img src="assets/tpl-flat-graphic.png" alt="扁平动态图形模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>扁平动态图形</h3>
+              <span class="kw-key mono">flat-motion-graphics</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Flat vector motion graphics, geometric, limited palette.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/flat-motion-graphics/</span> · 演示图：<span class="mono">assets/tpl-flat-graphic.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>扁平城市说明</h4>
+                <span class="scene">图形 · 元素入场</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Flat vector motion graphics, geometric city skyline, simple icons sliding in, teal orange cream palette, smooth UI motion, no readable text. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>图标流程动画</h4>
+                <span class="scene">信息 · 元素弹入</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Flat motion graphics, abstract nodes and arrows connecting with spring motion, minimal background. 1:1, 4 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>扁平人物行走</h4>
+                <span class="scene">角色 · 侧面 · 循环</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Flat 2D vector character walking loop in side view, simple shapes, consistent stroke, seamless loop. 16:9, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <article class="tpl-block" id="tpl-claymation">
+          <div class="tpl-media">
+            <img src="assets/style-clay.png" alt="黏土定格模板演示图" loading="lazy" />
+          </div>
+          <div class="tpl-body">
+            <div class="tpl-title-row">
+              <h3>黏土定格</h3>
+              <span class="kw-key mono">claymation</span>
+            </div>
+            <p class="tpl-lock"><strong>风格锁定：</strong><span class="mono">Stop-motion claymation, handmade textures, miniature sets.</span></p>
+            <p class="tpl-skill">Skill：<span class="mono">ai-video-skills/claymation/</span> · 演示图：<span class="mono">assets/style-clay.png</span></p>
+            <div class="tpl-list">
+              
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>雨巷黏土人物</h4>
+                <span class="scene">角色 · 中景 · 缓推</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Stop-motion claymation, handmade clay character in a red coat on a miniature rainy neon alley set, slow push in, soft practical lights, shallow macro focus. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>微缩小镇建立</h4>
+                <span class="scene">空镜 · 全景 · 横摇</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Miniature claymation town diorama, tiny houses and lamps, slow pan across the set, warm tabletop lighting. 16:9, 5 seconds.</div>
+              </div>
+            </div>
+            <div class="tpl-item">
+              <div class="tpl-item-head">
+                <h4>黏土手部动作</h4>
+                <span class="scene">特写 · 固定</span>
+              </div>
+              <div class="prompt-box">
+                <button class="copy-btn" type="button">复制</button>
+                <div class="prompt-text">Close-up claymation, clay hands placing a tiny object on a miniature table, macro DOF. 1:1, 4 seconds.</div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </article>
+        <div class="note" style="margin-top:8px">
+          完整 skill 文档（触发说明、避坑、工作流）见各风格文件夹内 <span class="mono">SKILL.md</span>；
+          索引见 <span class="mono">ai-video-skills/README.md</span>。
         </div>
       </section>
 
